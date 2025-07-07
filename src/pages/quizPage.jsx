@@ -103,6 +103,7 @@ export default function QuizPage() {
             navigate("/result", { state: { score, subject } });
         } catch (error) {
             console.error("Email Sent Error", error);
+            console.log(error);
             toast({
                 title: "Submission Failed",
                 description: "Couldn't Send Email. Please Try again Later",
